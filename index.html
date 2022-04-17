@@ -14,11 +14,11 @@
 
 <body>
 <div class="addTicket">
-<div class="addTicket-img">
+   <div class="addTicket-img">
     <img src="img/undraw_Traveling_re_weve (1)@2x.png" alt="">
     <img src="img/Let’s Travel !@2x.png" alt="">
-</div>
-<div class="addTicket-form">
+   </div>
+   <form action="" class="addTicket-form">
     <div class="formTitle">
         <span class="material-icons">add_circle_outline</span>
         <h2>新增旅遊套票</h2>
@@ -42,22 +42,22 @@
     </div>
     <div class="ticketPrice">
         <label for="ticketPrice">套票金額</label>
-        <input id="ticketPrice" type="number" placeholder="請填寫套票金額">
+        <input id="ticketPrice" type="number" placeholder="請填寫套票金額" min="100">
     </div>
     <div class="ticketCount">
         <label for="ticketCount">套票組數</label>
-        <input id="ticketCount" type="number" placeholder="請填寫套票組數">
+        <input id="ticketCount" type="number" placeholder="請填寫套票組數" min="1">
     </div>
     <div class="ticketRate">
         <label for="ticketRate">套票星級</label>
-        <input id="ticketRate" type="number" placeholder="請填寫套票星級">
+        <input id="ticketRate" type="number" placeholder="請填寫套票星級" min="1" max="10">
     </div>
     <div class="ticketState">
         <label for="ticketState">套票描述</label>
-        <textarea name="" id="ticketState" placeholder="請填寫套票描述"></textarea>
+        <textarea name="" id="ticketState" placeholder="請填寫套票描述(限100字)"></textarea>
     </div>
     <input class="formBtn" type="submit" value="新增套票">
-</div>
+   </form>
 </div>
 <div class="showTicket">
     <div class="regionSelect">
@@ -66,8 +66,9 @@
             <option value="台北">台北</option>
             <option value="台中">台中</option>
             <option value="高雄">高雄</option>
+            <option value="全部地區">全部地區</option>
         </select>
-        <p>本次搜尋共 6 筆資料</p>
+        <p></p>
     </div>
     <div class="showArea">
         <div class="ticketCard">
@@ -82,7 +83,7 @@
               <div class="cardValue">
                 <div class="valueCount">
                     <span class="material-icons">error</span>
-                    <p>剩下最後 8 組</p>
+                    <p>最後 8 組</p>
                 </div>
                 <div class="valuePrice">
                     <p>TWD</p>
@@ -103,7 +104,7 @@
               <div class="cardValue">
                 <div class="valueCount">
                     <span class="material-icons">error</span>
-                    <p>剩下最後 12 組</p>
+                    <p>最後 12 組</p>
                 </div>
                 <div class="valuePrice">
                     <p>TWD</p>
@@ -124,7 +125,7 @@
               <div class="cardValue">
                 <div class="valueCount">
                     <span class="material-icons">error</span>
-                    <p>剩下最後 2 組</p>
+                    <p>最後 2 組</p>
                 </div>
                 <div class="valuePrice">
                     <p>TWD</p>
@@ -166,7 +167,7 @@
               <div class="cardValue">
                 <div class="valueCount">
                     <span class="material-icons">error</span>
-                    <p>剩下最後 5 組</p>
+                    <p>最後 5 組</p>
                 </div>
                 <div class="valuePrice">
                     <p>TWD</p>
@@ -187,7 +188,7 @@
               <div class="cardValue">
                 <div class="valueCount">
                     <span class="material-icons">error</span>
-                    <p>剩下最後 3 組</p>
+                    <p>最後 3 組</p>
                 </div>
                 <div class="valuePrice">
                     <p>TWD</p>
