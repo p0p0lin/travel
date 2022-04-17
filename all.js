@@ -148,7 +148,7 @@ addTicket_form.addEventListener('click',function(e){
         obj.imgUrl=imgUrl.value;
         obj.area=ticketArea.value;
         obj.description=ticketState.value;
-        obj.group=ticketCount.value;
+        obj.group=`最後 ${ticketCount.value} 組`;
         obj.price=ticketPrice.value;
         obj.rate=ticketRate.value;
         data.push(obj);
