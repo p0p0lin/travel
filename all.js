@@ -104,8 +104,9 @@ const showArea=document.querySelector('.showArea');
 //初始化
 function init(){
     let str='';
-    data.forEach(function(item){
-      str+=`<div class="ticketCard">
+    data.forEach(function(item,index){
+      str+=`<div class="ticketCard" data-aos="fade-up"
+      data-aos-duration="${500*(index%3+1)}">
       <a href="#" onclick="return false"><img src='${item.imgUrl}' alt=""></a>
       <div class="ticketCard-tag">
           <p class="ticketCard-area">${item.area}</p>
@@ -190,9 +191,10 @@ regionSelect.addEventListener('change',function(e){
         return item.area===e.target.value;
     })
 
-    newData.forEach(function(item){
+    newData.forEach(function(item,index){   
         if(e.target.value==item.area){
-            str+=`<div class="ticketCard">
+            str+=`<div class="ticketCard" data-aos="fade-up"
+            data-aos-duration="${500*(index%3+1)}">
             <a href="#" onclick="return false"><img src='${item.imgUrl}' alt=""></a>
             <div class="ticketCard-tag">
                 <p class="ticketCard-area">${item.area}</p>
